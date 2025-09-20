@@ -1,0 +1,1 @@
+# VueIcons VS Code Extension

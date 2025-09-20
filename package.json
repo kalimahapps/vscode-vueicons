@@ -1,0 +1,47 @@
+{
+	"publisher": "KalimahApps",
+	"name": "vue-icons",
+	"displayName": "VueIcons IntelliSense",
+	"description": "VueIcons search and preview within VSCode",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kalimahapps/vscode-vueicons.git"
+	},
+	"type": "module",
+	"private": true,
+	"packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a",
+	"license": "MIT",
+	"activationEvents": ["onLanguage:vue", "onLanguage:typescript", "onLanguage:javascript"],
+	"scripts": {
+		"build": "tsdown --env.NODE_ENV production",
+		"dev": "tsdown --watch ./src --env.NODE_ENV development",
+		"typecheck": "tsc --noEmit",
+		"vscode:package": "vsce package --no-dependencies",
+		"vscode:prepublish": "pnpm run build"
+	},
+	"devDependencies": {
+		"@kalimahapps/eslint-config": "^1.2.93",
+		"@types/node": "22.x",
+		"@types/vscode": "^1.89.0",
+		"@vue/server-renderer": "^3.5.18",
+		"change-case": "^5.4.4",
+		"eslint": "^9.33.0",
+		"local-pkg": "^1.1.1",
+		"reactive-vscode": "^0.3.1",
+		"tsdown": "^0.14.0",
+		"typescript": "^5.9.2"
+	},
+	"keywords": ["icons", "vue", "intellisense"],
+	"categories": ["Visualization", "Other"],
+	"main": "./dist/extension.cjs",
+	"icon": "logo.png",
+	"files": [
+		"LICENSE.md",
+		"dist/*",
+		"logo.png"
+	],
+	"engines": {
+		"vscode": "^1.89.0"
+	}
+}
