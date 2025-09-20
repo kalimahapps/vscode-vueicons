@@ -12,8 +12,6 @@ jobs:
 
       - name: Setup pnpm and install documentation dependencies
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v1
