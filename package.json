@@ -3,7 +3,7 @@
 	"name": "vue-icons",
 	"displayName": "VueIcons IntelliSense",
 	"description": "VueIcons search and preview within VSCode",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/kalimahapps/vscode-vueicons.git"
